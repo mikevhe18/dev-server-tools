@@ -30,7 +30,7 @@ class TestCreate(BaseCase):
         child_menu_ids =\
             self.check_child_menu_ids(True)['ids']
 
-        #Check Group Ids
+        # Check Group Ids
         self.assertIn(
             child_menu_ids.custom_group_id.id,
             [x.id for x in child_menu_ids.groups_id])
